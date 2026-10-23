@@ -1,0 +1,29 @@
+from typing import Literal
+from pydantic import BaseModel, ConfigDict, Field
+
+
+class Ticket(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    customer_name: str | None = None
+    order_id: str | None = None
+    product: str | None = None
+    amount: float | None = Field(default=None, ge=0)
+
+    issue_type: Literal[
+        "Damaged Product",
+        "Defective Product",
+        "Delayed Delivery",
+        "Billing Issue",
+        "Other",
+    ]
+
+    requested_action: Literal[
+        "Refund",
+        "Replacement",
+        "Repair",
+        "Information",
+        "Other",
+    ]
+
+    priority: Literal["Low", "Normal", "High"]
