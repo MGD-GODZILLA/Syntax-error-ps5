@@ -1,0 +1,2 @@
+{"text":"Hi, I'm Rahul. Order ORD-1234 arrived damaged. I paid 2499 and want a replacement.","customer_name":"Rahul","order_id":"ORD-1234","product":null,"amount":2499,"issue_type":"Damaged Product","requested_action":"Replacement","priority":"Normal"}
+{"text":"My headphones stopped working after two days. Order ORD-8891. Please arrange a repair.","customer_name":null,"order_id":"ORD-8891","product":"headphones","amount":null,"issue_type":"Defective Product","requested_action":"Repair","priority":"Normal"}
